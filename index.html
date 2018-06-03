@@ -9,7 +9,7 @@
       <a class="main-header-logo">
       	<img class="main-header-logo__image" src="./img/logo.png" width="163" height="34" alt="DEVICE">
       </a>
-      <form class="main-header-search" action="">
+      <form class="main-header-search" action="/echo">
 				<button class="main-search__btn">Искать</button>
 				<input class="main-search__input" type="text" placeholder="Поиск по сайту">
 			</form>
@@ -31,43 +31,37 @@
 					<li class="site-list__item">
 						<a class="site-list__link" href="#">Каталог товаров</a>
 						<ul class="site-list__submenu site-submenu-list">
-							<div class="site-submenu-list__wrapper">
-								<li class="site-submenu-list__item">
-									<a class="site-submenu-list__link" href="#">Виртуальная реальность</a>
-								</li>
-								<li class="site-submenu-list__item">
-									<a class="site-submenu-list__link" href="catalog.html">Моноподы для селфи</a>
-								</li>
-								<li class="site-submenu-list__item">
-									<a class="site-submenu-list__link" href="#">Экшн-камеры</a>
-								</li>
-							</div>
-							<div class="site-submenu-list__wrapper">
-								<li class="site-submenu-list__item">
-									<a class="site-submenu-list__link" href="#">Фитнесс браслеты</a>
-								</li>
-								<li class="site-submenu-list__item">
-									<a class="site-submenu-list__link" href="#">Умные часы</a>
-								</li>
-							</div>
-							<div class="site-submenu-list__wrapper">
-								<li class="site-submenu-list__item">
-									<a class="site-submenu-list__link" href="#">Квадрокоптеры</a>
-								</li>
-							</div>
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="#">Виртуальная реальность</a>
+							</li>
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="catalog.html">Моноподы для селфи</a>
+							</li>
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="#">Экшн-камеры</a>
+							</li>
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="#">Фитнесс браслеты</a>
+							</li>
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="#">Умные часы</a>
+							</li>
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="#">Квадрокоптеры</a>
+							</li>
 						</ul>
 					</li>
-					<div class="site-list__wrapper">
-						<li class="site-list__item">
-							<a class="site-list__link" href="#">Доставка</a>
-						</li>
-						<li class="site-list__item">
-							<a class="site-list__link" href="#">Гарантия</a>
-						</li>
-						<li class="site-list__item">
-							<a class="site-list__link site-list__link--contacts" href="#">Контакты</a>
-						</li>
-					</div>
+				</ul>
+				<ul class="main-nav__list site-list site-list--rigth">
+					<li class="site-list__item">
+						<a class="site-list__link" href="#">Доставка</a>
+					</li>
+					<li class="site-list__item">
+						<a class="site-list__link" href="#">Гарантия</a>
+					</li>
+					<li class="site-list__item">
+						<a class="site-list__link site-list__link--contacts" href="#">Контакты</a>
+					</li>
 				</ul>
 			</nav>
     </header> 
@@ -82,17 +76,18 @@
 
         <ul class="best-product-slider-control">
 		      <li class="best-product-slider-control__item">
-		      	<label class="best-product-slider-control__label" for="best-product-slider__toggle1">Слайд 1<label>
+		      	<label class="best-product-slider-control__label" for="best-product-slider__toggle1">Слайд 1</label>
 		      </li>
 		      <li class="best-product-slider-control__item">
-		      	<label class="best-product-slider-control__label" for="best-product-slider__toggle2">Слайд 2<label>
+		      	<label class="best-product-slider-control__label" for="best-product-slider__toggle2">Слайд 2</label>
 		      </li>
 		      <li class="best-product-slider-control__item">
-		      	<label class="best-product-slider-control__label" for="best-product-slider__toggle3">Слайд 3<label>
+		      	<label class="best-product-slider-control__label" for="best-product-slider__toggle3">Слайд 3</label>
 		      </li>
 		    </ul>
 
 		    <article class="best-product-slider__slide">
+		    	<h3 class="visually-hidden">Cлайд 1</h3>
 		    	<div class="best-product-slider__picture">
 						<img class="best-product-slider__image" src="./img/slider__image1.png" width="384" height="486" alt="Selfi stick">
 					</div>
@@ -119,6 +114,7 @@
 		    </article>
 
 		    <article class="best-product-slider__slide">
+		    	<h3 class="visually-hidden">Cлайд 2</h3>
 		    	<div class="best-product-slider__picture">
 						<img class="best-product-slider__image" src="./img/slider__image2.png" width="345" height="485" alt="Fitness bracelet">
 					</div>
@@ -141,6 +137,7 @@
 		    </article>
 
 		    <article class="best-product-slider__slide">
+		    	<h3 class="visually-hidden">Cлайд 3</h3>
 		    	<div class="best-product-slider__picture">
 						<img class="best-product-slider__image" src="./img/slider__image3.png" width="526" height="334" alt="Quadcopter">
 					</div>
@@ -197,13 +194,13 @@
 
         <ul class="services-slider-control">
 		      <li class="services-slider-control__item">
-		      	<label class="services-slider-control__label" for="services-slider__toggle1">Доставка<label>
+		      	<label class="services-slider-control__label" for="services-slider__toggle1">Доставка</label>
 		      </li>
 		      <li class="best-product-slider-control__item">
-		      	<label class="services-slider-control__label" for="services-slider__toggle2">Гарантия<label>
+		      	<label class="services-slider-control__label" for="services-slider__toggle2">Гарантия</label>
 		      </li>
 		      <li class="best-product-slider-control__item">
-		      	<label class="services-slider-control__label" for="services-slider__toggle3">Кредит<label>
+		      	<label class="services-slider-control__label" for="services-slider__toggle3">Кредит</label>
 		      </li>
 		    </ul>
 
@@ -221,7 +218,6 @@
 		    	<h3 class="services-slider__title">Кредит</h3>
 					<p class="services-slider__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 				</section>
-		    </section>
 			</section>
 
 			<section class="partners">
@@ -267,6 +263,7 @@
 					<h2 class="contacts__title">Контакты</h2>
 					<p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 					<section class="contacts__map">
+						<h3 class="visually-hidden">Карта</h3>
 						<img class="contacts__image" src="./img/contacts__image.jpg" width="560" height="222" alt="Наш адрес: г. Москва, ул. Строителей, 15">
 					</section>
 					<a class="btn contacts__btn" href="#">Напиши нам</a>
@@ -331,7 +328,7 @@
 
 		<section class="modal modal-write">
 			<h2 class="visually-hidden">Напиши нам</h2>
-			<form class="modal-write__form" action="">
+			<form class="modal-write__form" action="/echo">
 				<label class="modal-write__label" for="name">Ваше имя:</label>
 				<input class="modal-write__input" id="name" type="text" placeholder="Имя Фамилия">
 				<label class="modal-write__label" for="email">Ваш e-mail:</label>

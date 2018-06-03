@@ -9,14 +9,14 @@
     <a class="main-header-logo" href="index.html">
     	<img class="main-header-logo__image" src="./img/logo.png" width="163" height="34" alt="DEVICE">
     </a>
-    <form class="main-header-search" action="">
+    <form class="main-header-search" action="/echo">
 			<button class="main-search__btn">Искать</button>
 			<input class="main-search__input" type="text" placeholder="Поиск по сайту">
 		</form>
 		<ul class="main-user">
 			<li class="main-user__item"><a class="main-user__link" href="#">Валентин Петухов</a></li>
 			<li class="main-user__item">
-				<form action="main-user__form">
+				<form class="main-user__form" action="/echo">
 					<button class="main-user__link" type="submit">Выйти</button>
 				</form>
 			</li>
@@ -30,11 +30,10 @@
 			</li>
 		</ul>
 		<nav class="main-header__nav main-nav">
-			<ul class="main-nav__list site-list">
-				<li class="site-list__item">
-					<a class="site-list__link" href="#">Каталог товаров</a>
-					<ul class="site-list__submenu site-submenu-list">
-						<div class="site-submenu-list__wrapper">
+				<ul class="main-nav__list site-list">
+					<li class="site-list__item">
+						<a class="site-list__link" href="#">Каталог товаров</a>
+						<ul class="site-list__submenu site-submenu-list">
 							<li class="site-submenu-list__item">
 								<a class="site-submenu-list__link" href="#">Виртуальная реальность</a>
 							</li>
@@ -44,23 +43,19 @@
 							<li class="site-submenu-list__item">
 								<a class="site-submenu-list__link" href="#">Экшн-камеры</a>
 							</li>
-						</div>
-						<div class="site-submenu-list__wrapper">
 							<li class="site-submenu-list__item">
 								<a class="site-submenu-list__link" href="#">Фитнесс браслеты</a>
 							</li>
 							<li class="site-submenu-list__item">
 								<a class="site-submenu-list__link" href="#">Умные часы</a>
 							</li>
-						</div>
-						<div class="site-submenu-list__wrapper">
 							<li class="site-submenu-list__item">
 								<a class="site-submenu-list__link" href="#">Квадрокоптеры</a>
 							</li>
-						</div>
-					</ul>
-				</li>
-				<div class="site-list__wrapper">
+						</ul>
+					</li>
+				</ul>
+				<ul class="main-nav__list site-list site-list--rigth">
 					<li class="site-list__item">
 						<a class="site-list__link" href="#">Доставка</a>
 					</li>
@@ -70,9 +65,8 @@
 					<li class="site-list__item">
 						<a class="site-list__link site-list__link--contacts" href="#">Контакты</a>
 					</li>
-				</div>
-			</ul>
-		</nav>
+				</ul>
+			</nav>
   </header> 
 
   <main class="container">
@@ -89,7 +83,7 @@
 
   	<section class="filters">
       <h2 class="filters__title">Фильтр:</h2>
-      <form class="filters-form" action="">
+      <form class="filters-form" action="/echo">
       	<!-- Здесь будет форма ползунка -->
 
       	<section class="filters-form__color">
@@ -113,16 +107,16 @@
 
     <section class="sort">
       <h2 class="sort__title">Сортировка:</h2>
-      <form class="sort-form" action="">
-      	<!-- Здесь будет форма ползунка -->
-
+      <form class="sort-form" action="/echo">
       	<section class="sort-form__types">
+      		<h3 class="visually-hidden">Тип сортировки</h3>
       		<label class="sort-form__label"><input class="sort-form__type" name="sort-type" type="radio" checked>По цене</label>
       		<label class="sort-form__label"><input class="sort-form__type" name="sort-type" type="radio">По типу</label>
       		<label class="sort-form__label"><input class="sort-form__type" name="sort-type" type="radio">По популярности</label>
       	</section>
 
       	<section class="sort-form__orders">
+      		<h3 class="visually-hidden">Порядок сортировки</h3>
       		<label class="sort-form__label"><input class="sort-form__order" name="sort-order" type="radio" checked>По возрастанию</label>
       		<label class="sort-form__label"><input class="sort-form__order" name="sort-order" type="radio">По убыванию</label>
       	</section>
@@ -144,7 +138,7 @@
     			</p>
 					<div class="catalog-item__wrapper">
 						<a class="btn catalog-item__btn" href="#">В корзину</a>
-						<form class="catalog-item__form" action="">
+						<form class="catalog-item__form" action="/echo">
 							<button class="catalog-item__compare" type="submit">Добавить к сравнению</button>
 						</form>
 					</div>
@@ -162,7 +156,7 @@
     			</p>
 					<div class="catalog-item__wrapper">
 						<a class="btn catalog-item__btn" href="#">В корзину</a>
-						<form class="catalog-item__form" action="">
+						<form class="catalog-item__form" action="/echo">
 							<button class="catalog-item__compare" type="submit">Добавить к сравнению</button>
 						</form>
 					</div>
@@ -180,7 +174,7 @@
     			</p>
 					<div class="catalog-item__wrapper">
 						<a class="btn catalog-item__btn" href="#">В корзину</a>
-						<form class="catalog-item__form" action="">
+						<form class="catalog-item__form" action="/echo">
 							<button class="catalog-item__compare" type="submit">Добавить к сравнению</button>
 						</form>
 					</div>
@@ -198,7 +192,7 @@
     			</p>
 					<div class="catalog-item__wrapper">
 						<a class="btn catalog-item__btn" href="#">В корзину</a>
-						<form class="catalog-item__form" action="">
+						<form class="catalog-item__form" action="/echo">
 							<button class="catalog-item__compare" type="submit">Добавить к сравнению</button>
 						</form>
 					</div>
@@ -207,6 +201,7 @@
     </section>
 
     <section class="pagination">
+    	<h2 class="visually-hidden">Постраничная навигация</h2>
     	<a class="pagination__control pagination__control--prev">Назад</a>
     	<ul class="pagination-list">
 	    	<li class="pagination-list__item pagination-list__item--current">
@@ -233,7 +228,7 @@
 					<a class="main-user__link" href="#">Валентин Петухов</a>
 				</li>
 				<li class="main-user__item main-user__item--footer">
-					<form action="main-user__form">
+					<form class="main-user__form" action="/echo">
 						<button class="main-user__link" type="submit">Выйти</button>
 					</form>
 				</li>
