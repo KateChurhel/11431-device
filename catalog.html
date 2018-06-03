@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+  </head>
+<body>
+	<header class="main-header">
+    <a class="main-header-logo" href="index.html">
+    	<img class="main-header-logo__image" src="./img/logo.png" width="163" height="34" alt="DEVICE">
+    </a>
+    <form class="main-header-search" action="">
+			<button class="main-search__btn">Искать</button>
+			<input class="main-search__input" type="text" placeholder="Поиск по сайту">
+		</form>
+		<ul class="main-user">
+			<li class="main-user__item">Валентин Петухов</li>
+			<li class="main-user__item">Выйти</li>
+		</ul>
+		<ul class="main-controls">
+			<li class="main-controls__item">
+				<a class="main-controls__link" href="">Сравнить</a>
+			</li>
+			<li class="main-controls__item">
+				<a class="main-controls__link" href="">Корзина</a>
+			</li>
+		</ul>
+		<nav class="main-header__nav main-nav">
+			<ul class="main-nav__list site-list">
+				<li class="site-list__item">
+					<a class="site-list__link" href="">Каталог товаров</a>
+					<ul class="site-list__submenu site-submenu-list">
+						<div class="site-submenu-list__wrapper">
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="">Виртуальная реальность</a>
+							</li>
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="">Моноподы для селфи</a>
+							</li>
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="">Экшн-камеры</a>
+							</li>
+						</div>
+						<div class="site-submenu-list__wrapper">
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="">Фитнесс браслеты</a>
+							</li>
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="">Умные часы</a>
+							</li>
+						</div>
+						<div class="site-submenu-list__wrapper">
+							<li class="site-submenu-list__item">
+								<a class="site-submenu-list__link" href="">Квадрокоптеры</a>
+							</li>
+						</div>
+					</ul>
+				</li>
+				<div class="site-list__wrapper">
+					<li class="site-list__item">
+						<a class="site-list__link" href="">Доставка</a>
+					</li>
+					<li class="site-list__item">
+						<a class="site-list__link" href="">Гарантия</a>
+					</li>
+					<li class="site-list__item">
+						<a class="site-list__link site-list__link--contacts" href="">Контакты</a>
+					</li>
+				</div>
+			</ul>
+		</nav>
+  </header> 
+
+  <main class="container">
+  	<h1 class="main-title">Моноподы для селфи</h1>
+  	<ul class="breadcrumbs">
+  		<li class="breadcrumbs__item">
+  			<a class="breadcrumbs__link" href="index.html">Главная</a>
+  		</li>
+  		<li class="breadcrumbs__item">
+  			<a class="breadcrumbs__link" href="">Каталог товаров</a>
+  		</li>
+  		<li class="breadcrumbs__item">Моноподы для селфи</li>
+  	</ul>
+
+  	<section class="filters">
+      <h2 class="filters__title">Фильтр:</h2>
+      <form class="filters-form" action="">
+      	<!-- Здесь будет форма ползунка -->
+
+      	<section class="filters-form__color">
+      		<h3 class="filters-form__title">Цвет</h3>
+      		<label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox" checked>Черный</label>
+      		<label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox">Белый</label>
+      		<label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox" checked>Синий</label>
+      		<label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox" checked>Красный</label>
+      		<label class="filters-form__label"><input class="filters-form__checkbox" type="checkbox">Розовый</label>
+      	</section>
+
+      	<section class="filters-form__bluetooth">
+      		<h3 class="filters-form__title">Bluetooth</h3>
+      		<label class="filters-form__label"><input class="filters-form__radio" name="bluetooth" type="radio" checked>Есть</label>
+      		<label class="filters-form__label"><input class="filters-form__radio" name="bluetooth" type="radio">Нет</label>
+      	</section>
+
+      	<button class="btn" type="submit">Показать</button>
+      </form>
+    </section>
+
+    <section class="sort">
+      <h2 class="sort__title">Сортировка:</h2>
+      <form class="sort-form" action="">
+      	<!-- Здесь будет форма ползунка -->
+
+      	<section class="sort-form__types">
+      		<label class="sort-form__label"><input class="sort-form__type" name="sort-type" type="radio" checked>По цене</label>
+      		<label class="sort-form__label"><input class="sort-form__type" name="sort-type" type="radio">По типу</label>
+      		<label class="sort-form__label"><input class="sort-form__type" name="sort-type" type="radio">По популярности</label>
+      	</section>
+
+      	<section class="sort-form__orders">
+      		<label class="sort-form__label"><input class="sort-form__order" name="sort-order" type="radio" checked>По возрастанию</label>
+      		<label class="sort-form__label"><input class="sort-form__order" name="sort-order" type="radio">По убыванию</label>
+      	</section>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
