@@ -8,11 +8,11 @@
 		<header class="main-header">
 			<div class="container">
 				<a class="main-header__logo logo">
-					<img class="logo__image" src="./img/logo.svg" width="163" height="34" alt="DEVICE">
+					<img class="logo__image" src="./img/svg/logo.svg" width="163" height="34" alt="DEVICE">
 				</a>
 				<form class="main-header__search search" action="http://echo.htmlacademy.ru" method="post">
 					<label class="visually-hidden" for="search">Поиск</label>
-					<input class="search__input" id="search" type="text" placeholder="Поиск по сайту">
+					<input class="search__input" id="search" type="text" name="search" placeholder="Поиск по сайту">
 					<button class="search__btn">Искать</button>
 				</form>
 				<ul class="main__user user">
@@ -280,7 +280,7 @@
 			<div class="container">
 				<div class="main-footer__wrapper">
 					<a class="main-footer-logo logo">
-						<img class="logo__image" src="./img/logo--orange.svg" width="163" height="36" alt="DEVICE">
+						<img class="logo__image" src="./img/svg/logo--orange.svg" width="163" height="36" alt="DEVICE">
 					</a>
 					<ul class="main-user user">
 						<li class="user__item user__item--footer">
@@ -341,21 +341,26 @@
 		
 		<section class="modal modal-write">
 			<h2 class="visually-hidden">Напиши нам</h2>
-			<form class="modal-write__form" action="/echo">
+			<form class="modal-write__form" action="http://echo.htmlacademy.ru" method="post">
 				<label class="modal-write__label" for="name">Ваше имя:</label>
-				<input class="modal-write__input" id="name" type="text" placeholder="Имя Фамилия">
+				<input class="modal-write__input" id="name" name="user-name" type="text"   placeholder="Имя Фамилия">
 				<label class="modal-write__label" for="email">Ваш e-mail:</label>
-				<input class="modal-write__input" id="email" type="email" placeholder="email@example.com">
+				<input class="modal-write__input" id="email" name="user-email" type="email"  placeholder="email@example.com">
 				<label class="modal-write__label" for="comment">Текст письма:</label>
-				<textarea class="modal-write__input" id="comment" name="comment" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+				<textarea class="modal-write__input" id="comment" name="user-comment" cols="30" rows="10" placeholder="В свободной форме"></textarea>
 				<button class="btn" type="submit">Отправить</button>
 			</form>
-			<span class="madal-write__close">X</span>
+			<button class="madal-write__close" type="button">
+				<span class="visually-hidden">Закрыть окно</span>
+			</button>
 		</section>
 		<section class="modal modal-map">
 			<h2 class="visually-hidden">Карта</h2>
 			<img src="./img/contacts__image--big.jpg" width="960" height="559" alt="Наш адрес: г. Москва, ул. Строителей, 15">
 			<!--Интерактивная карта-->
+			<button class="madal-map__close" type="button">
+				<span class="visually-hidden">Закрыть окно</span>
+			</button>
 		</section>
 	</body>
 </html>
