@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
 	<head>
-		<meta charset="utf-8">
+		<meta charset="UTF-8">
 		<title>HTML Academy: Девайс</title>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
 		<header class="main-header">
@@ -13,7 +16,7 @@
 				<form class="main-header__search search" action="http://echo.htmlacademy.ru" method="post">
 					<label class="visually-hidden" for="search">Поиск</label>
 					<input class="search__input" id="search" type="text" name="search" placeholder="Поиск по сайту">
-					<button class="search__btn">Искать</button>
+					<button class="search__btn" type="submit">Найти</button>
 				</form>
 				<ul class="main__user user">
 					<li class="user__item">
@@ -80,20 +83,17 @@
 			<article class="slider">
 				<div class="container">
 					<h2 class="visually-hidden">Слайдер лучших продуктов</h2>
-					<input class="visually-hidden" type="radio" name="slider__toggle" id="slider__toggle1" value="slide1" checked>
-					<input class="visually-hidden" type="radio" name="slider__toggle" id="slider__toggle2" value="slide2">
-					<input class="visually-hidden" type="radio" name="slider__toggle" id="slider__toggle3" value="slide3">
-					<ul class="slider-control">
-						<li class="slider-control__item">
-							<label class="slider-control__label" for="slider__toggle1">Слайд 1</label>
-						</li>
-						<li class="slider-control__item">
-							<label class="slider-control__label" for="slider__toggle2">Слайд 2</label>
-						</li>
-						<li class="slider-control__item">
-							<label class="slider-control__label" for="slider__toggle3">Слайд 3</label>
-						</li>
-					</ul>
+					<div class="slider__btns">
+						<button class="slider__btn active" type="button">
+						<span class="visually-hidden">Cлайд 1</span>
+						</button>
+						<button class="slider__btn" type="button">
+						<span class="visually-hidden">Cлайд 2</span>
+						</button>
+						<button class="slider__btn" type="button">
+						<span class="visually-hidden">Cлайд 3</span>
+						</button>
+					</div>
 					<article class="slider__slide slide">
 						<h3 class="visually-hidden">Cлайд 1</h3>
 						<div class="slide__picture">
@@ -175,19 +175,19 @@
 						<li class="categories-product__item">
 							<a class="categories-product__link" href="#">Виртуальная реальность</a>
 						</li>
-						<li class="popular-product__item">
+						<li class="categories-product__item">
 							<a class="categories-product__link" href="catalog.html">Моноподы для селфи</a>
 						</li>
-						<li class="popular-product__item">
+						<li class="categories-product__item">
 							<a class="categories-product__link" href="#">Экшн-камеры</a>
 						</li>
-						<li class="popular-product__item">
+						<li class="categories-product__item">
 							<a class="categories-product__link" href="#">Фитнесс браслеты</a>
 						</li>
-						<li class="popular-product__item">
+						<li class="categories-product__item">
 							<a class="categories-product__link" href="#">Умные часы</a>
 						</li>
-						<li class="popular-product__item">
+						<li class="categories-product__item">
 							<a class="categories-product__link" href="#">Квадрокоптеры</a>
 						</li>
 					</ul>
@@ -196,56 +196,48 @@
 			<section class="services">
 				<div class="container">
 					<h2 class="visually-hidden">Слайдер услуг</h2>
-					<input class="visually-hidden" type="radio" name="services__toggle" id="services__toggle1" value="slide1" checked>
-					<input class="visually-hidden" type="radio" name="services__toggle" id="services__toggle2" value="slide2">
-					<input class="visually-hidden" type="radio" name="services__toggle" id="services__toggle3" value="slide3">
-					<ul class="services-control">
-						<li class="services-control__item">
-							<label class="services-control__label" for="services__toggle1">Доставка</label>
-						</li>
-						<li class="services-control__item">
-							<label class="services-control__label" for="services__toggle2">Гарантия</label>
-						</li>
-						<li class="services-control__item">
-							<label class="services-control__label" for="services__toggle3">Кредит</label>
-						</li>
-					</ul>
+					<div class="services__btns">
+						<button class="btn services__btn active" type="button">Доставка</button>
+						<button class="btn services__btn" type="button">Гарантия</button>
+						<button class="btn services__btn" type="button">Кредит</button>
+					</div>
 					<section class="services__slide">
-						<h3 class="services__title">Доставка</h3>
+						<h3 class="title services__title">Доставка</h3>
 						<p class="services__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
 					</section>
 					<section class="services__slide">
-						<h3 class="services__title">Гарантия</h3>
-						<p class="services__description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. <br> Товар, не дом, конечно же.</p>
+						<h3 class="title services__title">Гарантия</h3>
+						<p class="services__description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+						<br> Товар, не дом, конечно же.</p>
 					</section>
 					<section class="services__slide">
-						<h3 class="services__title">Кредит</h3>
+						<h3 class="title services__title">Кредит</h3>
 						<p class="services__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
 					</section>
 				</div>
 			</section>
-			<section class="partners">
+			<section class="brands">
 				<div class="container">
 					<h2 class="visually-hidden">Партнеры</h2>
-					<ul class="partners__wrapper">
-						<li class="partners__item">
-							<a class="partners__link" href="#" target="_blank">
-								<img class="partners__image" src="./img/partners__dji.jpg" width="260" height="100" alt="dji">
+					<ul class="brands__wrapper">
+						<li class="brands__item">
+							<a class="brands__link" href="#" target="_blank">
+								<img class="brands__image" src="./img/brands__dji.jpg" width="260" height="100" alt="dji">
 							</a>
 						</li>
-						<li class="partners__item">
-							<a class="partners__link" href="#" target="_blank">
-								<img class="partners__image" src="./img/partners__spgadgets.jpg" width="260" height="100" alt="SP GADGETS">
+						<li class="brands__item">
+							<a class="brands__link" href="#" target="_blank">
+								<img class="brands__image" src="./img/brands__spgadgets.jpg" width="260" height="100" alt="SP GADGETS">
 							</a>
 						</li>
-						<li class="partners__item">
-							<a class="partners__link" href="#" target="_blank">
-								<img class="partners__image" src="./img/partners__gopro.jpg" width="260" height="100" alt="GoPro">
+						<li class="brands__item">
+							<a class="brands__link" href="#" target="_blank">
+								<img class="brands__image" src="./img/brands__gopro.jpg" width="260" height="100" alt="GoPro">
 							</a>
 						</li>
-						<li class="partners__item">
-							<a class="partners__link" href="#" target="_blank">
-								<img class="partners__image" src="./img/partners__vive.jpg" width="260" height="100" alt="Vive">
+						<li class="brands__item">
+							<a class="brands__link" href="#" target="_blank">
+								<img class="brands__image" src="./img/brands__vive.jpg" width="260" height="100" alt="Vive">
 							</a>
 						</li>
 					</ul>
@@ -254,7 +246,7 @@
 			<div class="wrapper">
 				<div class="container">
 					<section class="about-us">
-						<h2 class="about-us__title">О нас</h2>
+						<h2 class=" title about-us__title">О нас</h2>
 						<p class="about-us__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 						<p class="about-us__description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 						<ul class="about-us__list">
@@ -265,7 +257,7 @@
 						<a class="btn about-us__btn" href="#">Подробнее о нас</a>
 					</section>
 					<section class="contacts">
-						<h2 class="contacts__title">Контакты</h2>
+						<h2 class="title contacts__title">Контакты</h2>
 						<p class="contacts__description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 						<section class="contacts__map">
 							<h3 class="visually-hidden">Карта</h3>
@@ -283,16 +275,16 @@
 						<img class="logo__image" src="./img/svg/logo--orange.svg" width="163" height="36" alt="DEVICE">
 					</a>
 					<ul class="main-user user">
-						<li class="user__item user__item--footer">
-							<a class="user__link" href="#">Войти</a>
+						<li class="user__item">
+							<a class="user__link user__link--footer" href="#">Войти</a>
 						</li>
 					</ul>
 					<ul class="main__controls controls">
 						<li class="controls__item">
-							<a class="controls__link controls__link--compare controls__link--footer" href="#">Сравнить</a>
+							<a class="controls__link controls__link--compare controls__link--footer" href="# ">Сравнить</a>
 						</li>
 						<li class="controls__item">
-							<a class="controls__link controls__link__cart controls__link--footer" href="#">Корзина</a>
+							<a class="controls__link controls__link__cart controls__link--footer" href="# ">Корзина</a>
 						</li>
 					</ul>
 				</div>
@@ -301,13 +293,13 @@
 					<nav class="main-footer__nav navigation">
 						<ul class="navigation__wrapper">
 							<li class="navigation__item">
-								<a class="navigation__link navigation__link--white" href="#">Доставка</a>
+								<a class="navigation__link navigation__link--footer" href="#">Доставка</a>
 							</li>
 							<li class="navigation__item">
-								<a class="navigation__link navigation__link--white" href="#">Гарантия</a>
+								<a class="navigation__link navigation__link--footer" href="#">Гарантия</a>
 							</li>
 							<li class="navigation__item">
-								<a class="navigation__link navigation__link--white" href="#">Контакты</a>
+								<a class="navigation__link navigation__link--footer" href="#">Контакты</a>
 							</li>
 						</ul>
 					</nav>
@@ -338,28 +330,33 @@
 				</div>
 			</div>
 		</footer>
-		
 		<section class="modal modal-write">
 			<h2 class="visually-hidden">Напиши нам</h2>
 			<form class="modal-write__form" action="http://echo.htmlacademy.ru" method="post">
-				<label class="modal-write__label" for="name">Ваше имя:</label>
-				<input class="modal-write__input" id="name" name="user-name" type="text"   placeholder="Имя Фамилия">
-				<label class="modal-write__label" for="email">Ваш e-mail:</label>
-				<input class="modal-write__input" id="email" name="user-email" type="email"  placeholder="email@example.com">
+				<div class="modal-write__user">
+					<p class="modal-write__name">
+						<label class="modal-write__label" for="name">Ваше имя:</label>
+						<input class="modal-write__input" id="name" name="user-name" type="text" placeholder="Имя Фамилия" required>
+					</p>
+					<p class="modal-write__email">
+						<label class="modal-write__label" for="email">Ваш e-mail:</label>
+						<input class="modal-write__input" id="email" name="user-email" type="email" placeholder="email@example.com" required>
+					</p>
+				</div>
 				<label class="modal-write__label" for="comment">Текст письма:</label>
-				<textarea class="modal-write__input" id="comment" name="user-comment" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+				<textarea class="modal-write__input" id="comment" name="user-comment"  placeholder="В свободной форме"></textarea>
 				<button class="btn" type="submit">Отправить</button>
 			</form>
-			<button class="madal-write__close" type="button">
-				<span class="visually-hidden">Закрыть окно</span>
+			<button class="madal__close" type="button">
+			<span class="visually-hidden">Закрыть окно</span>
 			</button>
 		</section>
 		<section class="modal modal-map">
 			<h2 class="visually-hidden">Карта</h2>
 			<img src="./img/contacts__image--big.jpg" width="960" height="559" alt="Наш адрес: г. Москва, ул. Строителей, 15">
 			<!--Интерактивная карта-->
-			<button class="madal-map__close" type="button">
-				<span class="visually-hidden">Закрыть окно</span>
+			<button class="madal__close" type="button">
+			<span class="visually-hidden">Закрыть окно</span>
 			</button>
 		</section>
 	</body>
