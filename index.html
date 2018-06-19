@@ -10,72 +10,72 @@
 	<body>
 		<header class="main-header">
 			<div class="container">
-				<a class="main-header__logo logo">
-					<img class="logo__image" src="./img/svg/logo.svg" width="163" height="34" alt="DEVICE">
-				</a>
-				<form class="main-header__search search" action="http://echo.htmlacademy.ru" method="post">
-					<label class="visually-hidden" for="search">Поиск</label>
-					<input class="search__input" id="search" type="text" name="search" placeholder="Поиск по сайту">
-					<button class="search__btn" type="submit">Найти</button>
-				</form>
-				<ul class="main-user">
-					<li class="main-user__item">
-						<a class="main-user__link main-user__link--enter" href="#">Войти</a>
-					</li>
-				</ul>
-				<ul class="main-user">
-					<li class="main-user__item">
-						<a class="main-user__link main-user__link--compare" href="#">Сравнить</a>
-					</li>
-					<li class="main-user__item">
-						<a class="main-user__link main-user__link__cart" href="#">Корзина</a>
-					</li>
-				</ul>
-				<nav class="main-header__nav navigation">
-					<h2 class="visually-hidden">Навигация по сайту</h2>
-					<ul class="navigation__wrapper">
-						<li class="navigation__item">
-							<a class="navigation__link" href="#">Каталог товаров</a>
-							<div class="navigation__inner">
-								<ul class="navigation__submenu submenu">
-									<li class="submenu__item">
-										<a class="submenu__link" href="#">Виртуальная реальность</a>
-									</li>
-									<li class="submenu__item">
-										<a class="submenu__link" href="catalog.html">Моноподы для селфи</a>
-									</li>
-									<li class="submenu__item">
-										<a class="submenu__link" href="#">Экшн-камеры</a>
-									</li>
-								</ul>
-								<ul class="navigation__submenu submenu">
-									<li class="submenu__item">
-										<a class="submenu__link" href="#">Фитнесс браслеты</a>
-									</li>
-									<li class="submenu__item">
-										<a class="submenu__link" href="#">Умные часы</a>
-									</li>
-								</ul>
-								<ul class="navigation__submenu submenu">
-									<li class="submenu__item">
-										<a class="submenu__link" href="#">Квадрокоптеры</a>
-									</li>
-								</ul>
-							</div>
-						</li>
-					</ul>
-					<ul class="navigation__wrapper navigation__wrapper--rigth">
-						<li class="navigation__item">
-							<a class="navigation__link" href="#">Доставка</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link" href="#">Гарантия</a>
-						</li>
-						<li class="navigation__item">
-							<a class="navigation__link navigation__link--contacts" href="#">Контакты</a>
-						</li>
-					</ul>
-				</nav>
+				<div class="main-header__wrapper">
+					<a class="main-header__logo logo">
+						<img class="logo__image" src="./img/svg/logo.svg" width="164" height="36" alt="DEVICE">
+					</a>
+					<div class="main-header__inner">
+						<form class="main-header__search search" action="http://echo.htmlacademy.ru" method="post">
+							<label class="visually-hidden" for="search">Поиск</label>
+							<input class="search__input" id="search" type="text" name="search" placeholder="Поиск по сайту">
+							<button class="search__btn" type="submit">Найти</button>
+						</form>
+						<ul class="main-user">
+							<li class="main-user__item">
+								<a class="main-user__link main-user__link--enter" href="#">Войти</a>
+							</li>
+							<li class="main-user__item main-user__item--compare">
+								<a class="main-user__link main-user__link--compare" href="#">Сравнить</a>
+							</li>
+							<li class="main-user__item">
+								<a class="main-user__link main-user__link__cart" href="#">Корзина</a>
+							</li>
+						</ul>
+					</div>
+					<nav class="main-header__nav navigation">
+						<h2 class="visually-hidden">Навигация по сайту</h2>
+						<ul class="navigation__wrapper">
+							<li class="navigation__item navigation__item--header">
+								<a class="navigation__link" href="#">Каталог товаров</a>
+								<div class="navigation__inner">
+									<ul class="navigation__submenu submenu">
+										<li class="submenu__item">
+											<a class="submenu__link" href="#">Виртуальная реальность</a>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="catalog.html">Моноподы для селфи</a>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="#">Экшн-камеры</a>
+										</li>
+									</ul>
+									<ul class="navigation__submenu submenu">
+										<li class="submenu__item">
+											<a class="submenu__link" href="#">Фитнесс браслеты</a>
+										</li>
+										<li class="submenu__item">
+											<a class="submenu__link" href="#">Умные часы</a>
+										</li>
+									</ul>
+									<ul class="navigation__submenu submenu">
+										<li class="submenu__item">
+											<a class="submenu__link" href="#">Квадрокоптеры</a>
+										</li>
+									</ul>
+								</div>
+							</li>
+							<li class="navigation__item navigation__item--header">
+								<a class="navigation__link" href="#">Доставка</a>
+							</li>
+							<li class="navigation__item navigation__item--header">
+								<a class="navigation__link" href="#">Гарантия</a>
+							</li>
+							<li class="navigation__item navigation__item--header">
+								<a class="navigation__link navigation__link--contacts" href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -96,10 +96,10 @@
 					</div>
 					<article class="slider__slide slide">
 						<h3 class="visually-hidden">Cлайд 1</h3>
-						<div class="slide__picture">
+						<div class="slide__picture slide__picture--slide1">
 							<img class="slide__image" src="./img/slider__image1.png" width="384" height="486" alt="Selfi stick">
 						</div>
-						<div class="slide__value">
+						<div class="slide__values">
 							<span class="slide__number">01</span>
 						</div>
 						<div class="slide__wrapper">
@@ -120,17 +120,17 @@
 							</table>
 						</div>
 					</article>
-					<article class="slider__slide slide">
+					<article class="slider__slide slide visually-hidden">
 						<h3 class="visually-hidden">Cлайд 2</h3>
-						<div class="slide__picture">
+						<div class="slide__picture slide__picture--slide2">
 							<img class="slide__image" src="./img/slider__image2.png" width="345" height="485" alt="Fitness bracelet">
 						</div>
-						<div class="slide__value">
+						<div class="slide__values">
 							<span class="slide__number">02</span>
 						</div>
 						<div class="slide__wrapper">
 							<b class="slide__title">Худеем <br> правильно!</b>
-							<p class="slide__description">Мотивирующие фитнесс-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+							<p class="slide__description">Мотивирующие фитнесс-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
 							<a class="btn slide__btn" href="">Подробнее</a>
 							<table class="slide__features">
 								<tr class="slide__row">
@@ -142,17 +142,17 @@
 							</table>
 						</div>
 					</article>
-					<article class="slider__slide slide">
+					<article class="slider__slide slide visually-hidden">
 						<h3 class="visually-hidden">Cлайд 3</h3>
-						<div class="slide__picture">
+						<div class="slide__picture slide__picture--slide3">
 							<img class="slide__image" src="./img/slider__image3.png" width="526" height="334" alt="Quadcopter">
 						</div>
-						<div class="slide__value">
+						<div class="slide__values">
 							<span class="slide__number">03</span>
 						</div>
 						<div class="slide__wrapper">
-							<b class="slide__title">Порхает как бабочка, жалит как пчела!</b>
-							<p class="slide__description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+							<b class="slide__title">Порхает&nbsp;как&nbsp;бабочка, жалит как пчела!</b>
+							<p class="slide__description">Этот обычный, на первый взгляд, квадрокоптер оснащен<br> мощным лазером, замаскированным под стандартную камеру.</p>
 							<a class="btn slide__btn" href="">Подробнее</a>
 							<table class="slide__features">
 								<tr class="slide__row">
@@ -173,22 +173,22 @@
 					<h2 class="visually-hidden">Категории товаров</h2>
 					<ul class="categories-product__wrapper">
 						<li class="categories-product__item">
-							<a class="categories-product__link" href="#">Виртуальная реальность</a>
+							<a class="categories-product__link categories-product__link--virtual" href="#">Виртуальная реальность</a>
 						</li>
 						<li class="categories-product__item">
-							<a class="categories-product__link" href="catalog.html">Моноподы для селфи</a>
+							<a class="categories-product__link categories-product__link--monopods" href="catalog.html">Моноподы<br>для селфи</a>
 						</li>
 						<li class="categories-product__item">
-							<a class="categories-product__link" href="#">Экшн-камеры</a>
+							<a class="categories-product__link categories-product__link--camera" href="#">Экшн-камеры</a>
 						</li>
 						<li class="categories-product__item">
-							<a class="categories-product__link" href="#">Фитнесс браслеты</a>
+							<a class="categories-product__link categories-product__link--braclete" href="#">Фитнес-браслеты</a>
 						</li>
 						<li class="categories-product__item">
-							<a class="categories-product__link" href="#">Умные часы</a>
+							<a class="categories-product__link categories-product__link--watch" href="#">Умные часы</a>
 						</li>
 						<li class="categories-product__item">
-							<a class="categories-product__link" href="#">Квадрокоптеры</a>
+							<a class="categories-product__link categories-product__link--quadcopter" href="#">Квадрокоптеры</a>
 						</li>
 					</ul>
 				</div>
@@ -196,24 +196,27 @@
 			<section class="services">
 				<div class="container">
 					<h2 class="visually-hidden">Слайдер услуг</h2>
-					<div class="services__btns">
-						<button class="btn services__btn active" type="button">Доставка</button>
-						<button class="btn services__btn" type="button">Гарантия</button>
-						<button class="btn services__btn" type="button">Кредит</button>
+					<div class="services__wrapper">
+						<div class="services__btns">
+							<button class="btn services__btn active" type="button">Доставка</button>
+							<button class="btn services__btn" type="button">Гарантия</button>
+							<button class="btn services__btn" type="button">Кредит</button>
+						</div>
+						<section class="services__slide services__slide--delivery">
+							<h3 class="title services__title">Доставка</h3>
+							<p class="services__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+						</section>
+						<section class="services__slide services__slide--warranty visually-hidden">
+							<h3 class="title services__title">Гарантия</h3>
+							<p class="services__description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+							<br> Товар, не дом, конечно же.</p>
+						</section>
+						<section class="services__slide services__slide--credit visually-hidden">
+							<h3 class="title services__title">Кредит</h3>
+							<p class="services__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+						</section>
+						
 					</div>
-					<section class="services__slide">
-						<h3 class="title services__title">Доставка</h3>
-						<p class="services__description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-					</section>
-					<section class="services__slide">
-						<h3 class="title services__title">Гарантия</h3>
-						<p class="services__description">Если из-за возгарания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-						<br> Товар, не дом, конечно же.</p>
-					</section>
-					<section class="services__slide">
-						<h3 class="title services__title">Кредит</h3>
-						<p class="services__description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-					</section>
 				</div>
 			</section>
 			<section class="brands">
@@ -243,10 +246,11 @@
 					</ul>
 				</div>
 			</section>
-			<div class="wrapper">
+			<div class="company">
 				<div class="container">
+					<div class="company__wrapper">
 					<section class="about-us">
-						<h2 class=" title about-us__title">О нас</h2>
+						<h2 class="title about-us__title">О нас</h2>
 						<p class="about-us__description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
 						<p class="about-us__description">Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
 						<ul class="about-us__list">
@@ -263,36 +267,35 @@
 							<h3 class="visually-hidden">Карта</h3>
 							<img class="contacts__image" src="./img/contacts__image.jpg" width="560" height="222" alt="Наш адрес: г. Москва, ул. Строителей, 15">
 						</section>
-						<a class="btn contacts__btn" href="#">Напиши&nbsp;нам</a>
+						<a class="btn contacts__btn" href="#">Напишите&nbsp;нам</a>
 					</section>
+				</div>
 				</div>
 			</div>
 		</main>
 		<footer class="main-footer">
 			<div class="container">
-				<div class="main-footer__wrapper">
+				<div class="main-footer__top">
 					<a class="main-footer-logo logo">
 						<img class="logo__image" src="./img/svg/logo--orange.svg" width="163" height="36" alt="DEVICE">
 					</a>
-					<ul class="main-user">
-						<li class="main-user__item">
-							<a class="main-user__link main-user__link--footer main-user__link--enter" href="#">Войти</a>
-						</li>
+					<ul class="main-user main-user--footer">
+							<li class="main-user__item main-user__item--footer">
+								<a class="main-user__link main-user__link--footer main-user__link--enter" href="#">Войти</a>
+							</li>
+							<li class="main-user__item main-user__item--footer main-user__item--compare">
+								<a class="main-user__link main-user__link--footer main-user__link--compare" href="#">Сравнить</a>
+							</li>
+							<li class="main-user__item main-user__item--footer">
+								<a class="main-user__link main-user__link--footer main-user__link__cart" href="#">Корзина</a>
+							</li>
 						</ul>
-				<ul class="main-user">
-						<li class="main-user__item">
-							<a class="main-user__link main-user__link--footer main-user__link--compare" href="#">Сравнить</a>
-						</li>
-						<li class="main-user__item">
-							<a class="main-user__link main-user__link--footer main-user__link__cart" href="#">Корзина</a>
-						</li>
-					</ul>
 				</div>
-				<div class="main-footer__wrapper">
+				<div class="main-footer__middle">
 					<p class="main-footer__address">г.&nbsp;Москва, ул.&nbsp;Строителей,&nbsp;15</p>
 					<nav class="main-footer__nav navigation">
 						<ul class="navigation__wrapper">
-							<li class="navigation__item">
+							<li class="navigation__item ">
 								<a class="navigation__link navigation__link--footer" href="#">Доставка</a>
 							</li>
 							<li class="navigation__item">
@@ -305,10 +308,9 @@
 					</nav>
 					<a class="main-footer__phone" href="tel:+74954959595">Тел.:&nbsp;+7&nbsp;(495)&nbsp;495-95-95</a>
 				</div>
-				<div class="main-footer__wrapper">
+				<div class="main-footer__bottom">
 					<div class="main-footer__line"></div>
-					<div class="main-footer__social social">
-						<ul class="social__wrapper">
+						<ul class="main-footer__social social">
 							<li class="social__item">
 								<a class="social__link social__link--facebook" href="#" target="_blank">
 									<span class="visually-hidden">facebook</span>
@@ -325,8 +327,10 @@
 								</a>
 							</li>
 						</ul>
-					</div>
-					<a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">HTML Academy</a>
+					
+					<a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+						<span class="visually-hidden">HTML Academy</span>
+					</a>
 				</div>
 			</div>
 		</footer>
@@ -359,5 +363,6 @@
 			<span class="visually-hidden">Закрыть окно</span>
 			</button>
 		</section>
+		<script src="js/main.js"></script>
 	</body>
 </html>
