@@ -36,3 +36,27 @@ for(let i=0; i<sliderItem.length; i++){
     
   }
 }
+
+let servicesBtn = document.querySelectorAll(".services__btn");
+let servicesItem = document.querySelectorAll(".services__slide");
+
+for(let i=0; i<servicesItem.length; i++){
+  
+  servicesBtn[i].onclick = () =>{
+    for(let j=0; j<servicesItem.length; j++){
+      servicesBtn[j].classList.remove("active");
+      servicesItem[j].classList.add("visually-hidden");
+    }
+    servicesBtn[i].classList.add("active");
+    servicesItem[i].classList.remove("visually-hidden");
+    
+  }
+}
+
+
+
+
+
+
+
+  
