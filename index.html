@@ -340,18 +340,18 @@
 			<h2 class="visually-hidden">Напиши нам</h2>
 			<form class="modal-write__form" action="http://echo.htmlacademy.ru" method="post">
 				<div class="modal-write__user">
-					<p class="modal-write__name">
+					<p class="modal-write__inner modal-write__name">
 						<label class="modal-write__label" for="name">Ваше имя:</label>
 						<input class="modal-write__input" id="name" name="user-name" type="text" placeholder="Имя Фамилия" required>
 					</p>
-					<p class="modal-write__email">
+					<p class="modal-write__inner modal-write__email">
 						<label class="modal-write__label" for="email">Ваш e-mail:</label>
 						<input class="modal-write__input" id="email" name="user-email" type="email" placeholder="email@example.com" required>
 					</p>
 				</div>
 				<label class="modal-write__label" for="comment">Текст письма:</label>
 				<textarea class="modal-write__input" id="comment" name="user-comment"  placeholder="В свободной форме"></textarea>
-				<button class="btn" type="submit">Отправить</button>
+				<button class="btn modal-write__btn" type="submit">Отправить</button>
 			</form>
 			<button class="madal__close" type="button">
 			<span class="visually-hidden">Закрыть окно</span>
@@ -359,7 +359,7 @@
 		</section>
 		<section class="modal modal-map">
 			<h2 class="visually-hidden">Карта</h2>
-			<img src="./img/contacts__image--big.jpg" width="960" height="559" alt="Наш адрес: г. Москва, ул. Строителей, 15">
+			<img class="modal-map__img" src="./img/contacts__image--big.jpg" width="960" height="559" alt="Наш адрес: г. Москва, ул. Строителей, 15">
 			<!--Интерактивная карта-->
 			<button class="madal__close" type="button">
 			<span class="visually-hidden">Закрыть окно</span>
