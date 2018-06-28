@@ -129,24 +129,24 @@
 					<section class="filters">
 						<h2 class="filters__title">Фильтр:</h2>
 						<form class="filters-form" action="http://echo.htmlacademy.ru" method="post">
-							<fieldset class="filters-form__inner">
+							<fieldset class="filters-form__inner filters-form__inner--price">
 								<legend class="filters-form__title filters-form__title--price">Стоимость</legend>
-								<div class="filters-form__range">
-									<div class="filters-form__controls">
+								
+									<div class="filters-form__range">
 										<div class="filters-form__scale">
 											<div class="filters-form__bar"></div>
 										</div>
-										<div class="filters-form__toggle filters-form__toggle--min" tabindex="0">от 0</div>
-										<div class="filters-form__toggle filters-form__toggle--max" tabindex="0">до 5000</div>
-									</div>
-									<!-- <div class="filters-form__price-controls">
-										<label class="filters-form__min-price">от <input name="min-price" type="text" value="0"></label>
-										<label class="filters-form__max-price">до <input name="max-price" type="text" value="5000"></label>
-									</div> -->
+										<div class="filters-form__toggle filters-form__toggle--min" tabindex="0">
+											<label class="filters-form__label-price">от <input class="filters-form__input-price" name="min-price" type="text" value="0"></label>
+										</div>
+										<div class="filters-form__toggle filters-form__toggle--max" tabindex="0">
+											<label class="filters-form__label-price">до <input class="filters-form__input-price" name="max-price" type="text" value="5000"></label>
+										</div>
+									
 								</div>
 							</fieldset>
 							
-							<fieldset class="filters-form__inner filters-form__inner--color">
+							<fieldset class="filters-form__inner ">
 								<legend class="filters-form__title">Цвет</legend>
 								
 								<input class="visually-hidden filters-form__checkbox" id="checkbox__black" type="checkbox" name="color" value="black" checked>
@@ -164,8 +164,8 @@
 								<input class="visually-hidden filters-form__checkbox" id="checkbox__pink" type="checkbox" name="color" value="pink">
 								<label class="filters-form__label" for="checkbox__pink">Розовый</label>
 							</fieldset>
-							<fieldset class="filters-form__inner filters-form__inner--bluetooth">
-								<legend class="filters-form__title">Bluetooth</legend>
+							<fieldset class="filters-form__inner ">
+								<legend class="filters-form__title filters-form__title--bluetooth">Bluetooth</legend>
 								
 								<input class="visually-hidden filters-form__radio" id="radio__on" type="radio" name="bluetooth" value="on" checked>
 								<label class="filters-form__label filters-form__label--radio" for="radio__on">Есть</label>
