@@ -5,7 +5,7 @@
 		<title>HTML Academy: Девайс</title>
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/style.min.css">
 	</head>
 	<body class="inner-page">
 		<header class="main-header">
@@ -15,7 +15,7 @@
 						<img class="logo__image" src="./img/svg/logo.svg" width="165" height="37" alt="DEVICE">
 					</a>
 					<div class="main-header__inner">
-						<form class="main-header__search search" action="http://echo.htmlacademy.ru" method="post">
+						<form class="main-header__search search" action="http://echo.htmlacademy.ru" method="get">
 							<label class="visually-hidden" for="search">Поиск</label>
 							<input class="search__input" id="search" type="text" name="search" placeholder="Поиск по сайту">
 							<button class="search__btn" type="submit">Найти</button>
@@ -128,7 +128,7 @@
 				<div class="container">
 					<section class="filters">
 						<h2 class="filters__title">Фильтр:</h2>
-						<form class="filters-form" action="http://echo.htmlacademy.ru" method="post">
+						<form class="filters-form" action="http://echo.htmlacademy.ru" method="get">
 							<fieldset class="filters-form__inner filters-form__inner--price">
 								<legend class="filters-form__title filters-form__title--price">Стоимость</legend>
 								
@@ -185,13 +185,13 @@
 							
 							<article class="catalog__item">
 								<div class="catalog__header">
-									<a class="catalog__link" href="#">
+									<a class="catalog__link" href="simple-selfi-stick.html">
 										<h3 class="catalog__title">Любительская селфи-палка</h3>
 									</a>
 									<b class="catalog__price">500&nbsp;руб.</b>
 								</div>
 								
-								<p class="catalog__picture" tabindex="0">
+								<p class="catalog__picture">
 									<img class="catalog__image" src="./img/item-1.jpg" width="360" height="380" alt="Selfi stick">
 								</p>
 								<div class="catalog__inner">
@@ -201,12 +201,12 @@
 							</article>
 							<article class="catalog__item">
 								<div class="catalog__header">
-									<a class="catalog__link" href="#">
+									<a class="catalog__link" href="professional-selfi-stick.html">
 										<h3 class="catalog__title">Профессиональная<br>селфи-палка</h3>
 									</a>
 									<b class="catalog__price">1&nbsp;500&nbsp;руб.</b>
 								</div>
-								<p class="catalog__picture" tabindex="0">
+								<p class="catalog__picture">
 									<img class="catalog__image" src="./img/item-2.jpg" width="360" height="380" alt="Selfi stick">
 								</p>
 								<div class="catalog__inner">
@@ -216,12 +216,12 @@
 							</article>
 							<article class="catalog__item">
 								<div class="catalog__header">
-									<a class="catalog__link" href="#">
+									<a class="catalog__link" href="waterproof-selfi-stick.html">
 										<h3 class="catalog__title">Непотопляемая селфи-палка</h3>
 									</a>
 									<b class="catalog__price">2&nbsp;500&nbsp;руб.</b>
 								</div>
-								<p class="catalog__picture" tabindex="0">
+								<p class="catalog__picture">
 									<img class="catalog__image" src="./img/item-3.jpg" width="360" height="380" alt="Selfi stick">
 								</p>
 								<div class="catalog__inner">
@@ -229,14 +229,14 @@
 									<a class="catalog__compare" href="add-to-compare.html">Добавить к сравнению</a>
 								</div>
 							</article>
-							<article class="catalog__item catalig__item--new">
+							<article class="catalog__item catalog__item--new">
 								<div class="catalog__header">
-									<a class="catalog__link" href="#">
+									<a class="catalog__link" href="hand-selfi-stick.html">
 										<h3 class="catalog__title">Селфи-палка «Следуй за мной»</h3>
 									</a>
 									<b class="catalog__price">4&nbsp;900&nbsp;руб.</b>
 								</div>
-								<p class="catalog__picture" tabindex="0">
+								<p class="catalog__picture">
 									<img class="catalog__image" src="./img/item-4.jpg" width="360" height="380" alt="Selfi stick">
 								</p>
 								<div class="catalog__inner">
@@ -329,6 +329,6 @@
 				</div>
 			</div>
 		</footer>
-		<script src="js/main.js"></script>
+		<script src="js/main.min.js"></script>
 	</body>
 </html>
