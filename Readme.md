@@ -1,5 +1,7 @@
 # Личный проект: Девайс
 
+* Студент: [Екатерина](https://up.htmlacademy.ru/htmlcss/21/user/11431).
+* Наставник: [Наталья Майстренко](https://htmlacademy.ru/profile/natalie).
 
 ---
 
